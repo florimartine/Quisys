@@ -16,9 +16,9 @@ class MemberDetailScreen extends StatefulWidget {
 class _MemberDetailScreenState extends State<MemberDetailScreen> {
   List<String> _infoOptions = ['Rôle', 'Hobbies', 'Competence', 'Couleur'];
   Map<String, List<String>> _infoValues = {
-    'Rôle': ['Développeur', 'Designer', 'Manager', 'Testeur'], // Valeurs par défaut
+    'Rôle': ['Protecteur', 'Social', 'Persecuteur', 'Hote','Little','Non-Humain'], // Valeurs par défaut
     'Hobbies': ['Lecture', 'Jeux Vidéo', 'Sport', 'Voyages'], // Valeurs par défaut
-    'Competence': ['Flutter', 'Dart', 'UI/UX', 'Backend'],
+    'Competence': ['modifie l inner', 'souviens de tout', 'meilleur en dessin', 'chant'],
     'Couleur': ['rouge', 'bleu', 'jaune','vert','rose','orange','violet','gris','noir','blanc'],
   };
 
@@ -42,7 +42,7 @@ class _MemberDetailScreenState extends State<MemberDetailScreen> {
 
     // Combiner les rôles personnalisés avec les valeurs par défaut et trier ensemble
     if (customRoles.isNotEmpty) {
-      _infoValues['Rôle'] = ['Développeur', 'Designer', 'Manager', 'Testeur'] + customRoles;
+      _infoValues['Rôle'] = ['Protecteur', 'Social', 'Persecuteur', 'Hote','Little','Non-Humain'] + customRoles;
     }
 
     // Combiner les hobbies personnalisés avec les valeurs par défaut et trier ensemble
@@ -51,7 +51,7 @@ class _MemberDetailScreenState extends State<MemberDetailScreen> {
     }
 
     if (customCompetence.isNotEmpty) {
-      _infoValues['Competence'] = ['Flutter', 'Dart', 'UI/UX', 'Backend'] + customCompetence;
+      _infoValues['Competence'] = ['modifie l inner', 'souviens de tout', 'meilleur en dessin', 'chant'] + customCompetence;
     }
     // Trier les valeurs par ordre alphabétique
     _infoValues.forEach((key, values) {

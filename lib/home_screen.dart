@@ -262,9 +262,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   // Afficher le questionnaire avec les rôles et hobbies personnalisés
   Widget _buildQuestionnaire() {
     final Map<String, List<String>> infoOptions = {
-      'Rôle': [..._customRoles, 'Développeur', 'Designer', 'Manager', 'Testeur']..sort(),
+      'Rôle': [..._customRoles, 'Protecteur', 'Social', 'Persecuteur', 'Hote','Little','Non-Humain']..sort(),
       'Hobbies': [..._customHobbies, 'Lecture', 'Jeux Vidéo', 'Sport', 'Voyages']..sort(),
-      'Competence': [..._customCompetence, 'Flutter', 'Dart', 'UI/UX', 'Backend']..sort(),
+      'Competence': [..._customCompetence, 'modifie l inner', 'souviens de tout', 'meilleur en dessin', 'chant']..sort(),
       'Couleur': ['rouge', 'bleu', 'jaune','vert','rose','orange','violet','gris','noir','blanc']..sort(),
     };
 
@@ -501,7 +501,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('PluralKit API Demo'),
+        title: Text('Quisys'),
         bottom: TabBar(
           controller: _tabController,
           tabs: [
